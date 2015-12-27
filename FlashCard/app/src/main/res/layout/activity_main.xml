@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:text="Flash Card"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:paddingTop="66dp"
+        android:paddingBottom="66dp"/>
+
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/menu_learn"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:lines="2"
+        android:text="Learn"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        app:rd_enable="true"
+        app:rd_rippleColor="#e1f5fe"
+        app:rd_delayClick="untilRelease"
+        app:rd_maxRippleRadius="match_view"
+        app:rd_padding="3dp"
+        app:rd_cornerRadius="6dp"
+        app:rd_rippleAnimDuration="800"
+        android:background="@drawable/button_style"/>
+
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_learn"
+        android:id="@+id/menu_subject"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:lines="2"
+        android:text="Subject"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        app:rd_enable="true"
+        app:rd_rippleColor="#e1f5fe"
+        app:rd_delayClick="untilRelease"
+        app:rd_maxRippleRadius="match_view"
+        app:rd_padding="3dp"
+        app:rd_cornerRadius="6dp"
+        app:rd_rippleAnimDuration="800"
+        android:background="@drawable/button_style"/>
+
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_subject"
+        android:id="@+id/menu_import"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:lines="2"
+        android:text="Import"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        app:rd_enable="true"
+        app:rd_rippleColor="#e1f5fe"
+        app:rd_delayClick="untilRelease"
+        app:rd_maxRippleRadius="match_view"
+        app:rd_padding="3dp"
+        app:rd_cornerRadius="6dp"
+        app:rd_rippleAnimDuration="800"
+        android:background="@drawable/button_style"/>
+
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_import"
+        android:id="@+id/menu_quit"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:lines="2"
+        android:text="Quit"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        app:rd_enable="true"
+        app:rd_rippleColor="#e1f5fe"
+        app:rd_delayClick="untilRelease"
+        app:rd_maxRippleRadius="match_view"
+        app:rd_padding="3dp"
+        app:rd_cornerRadius="6dp"
+        app:rd_rippleAnimDuration="800"
+        android:background="@drawable/button_style"/>
+
+</RelativeLayout>
+

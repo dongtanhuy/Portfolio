@@ -1,0 +1,131 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarlayout3"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Some text"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_subject_title"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbarlayout3"
+            android:id="@+id/tilte_list_view"
+            android:paddingTop="12dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#006064"
+            android:textStyle="bold"
+            android:text="All Words"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilte_list_view"
+            android:layout_above="@+id/linear_layout_1"
+            android:layout_margin="12dp"
+            android:scrollbars="none"
+            android:padding="6dp"
+            android:background="@drawable/listview_style"
+            android:id="@+id/list_cards"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linear_layout_1"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_new_card"
+                android:layout_marginRight="6dp"
+                android:text="New Card"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#00c853"
+                app:rd_enable="true"
+                app:rd_rippleColor="#b9f6ca"
+                app:rd_delayClick="untilRelease"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_padding="2dp"
+                app:rd_cornerRadius="4dp"
+                app:rd_rippleAnimDuration="400"
+                android:background="@drawable/new_card_btn"/>
+
+            <com.rey.material.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="6dp"
+                android:id="@+id/btn_export"
+                android:text="Export"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#4fc3f7"
+                app:rd_enable="true"
+                app:rd_rippleColor="#e1f5fe"
+                app:rd_delayClick="untilRelease"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_padding="2dp"
+                app:rd_cornerRadius="4dp"
+                app:rd_rippleAnimDuration="400"
+                android:background="@drawable/export_subject_btn"/>
+
+            <com.rey.material.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_delete_subject"
+                android:text="Delete"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#f44336"
+                app:rd_enable="true"
+                app:rd_rippleColor="#ffebee"
+                app:rd_delayClick="untilRelease"
+                app:rd_maxRippleRadius="match_view"
+                app:rd_padding="2dp"
+                app:rd_cornerRadius="4dp"
+                app:rd_rippleAnimDuration="400"
+                android:background="@drawable/delete_subject_btn"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

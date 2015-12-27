@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FlashCards</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_choose__subject_">Choose_Subject_Activity</string>
+    <string name="title_activity_choose_subject">Choose Subject To Learn</string>
+    <string name="title_activity_learn">Learn vocabulary</string>
+    <string name="title_activity_subject_manager">Subjects</string>
+    <string name="title_activity_edit_subject">Edit Subject</string>
+    <string name="title_activity_edit_card">Edit Card</string>
+    <string name="title_activity_import">Import from file</string>
+</resources>
